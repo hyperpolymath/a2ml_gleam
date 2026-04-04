@@ -3,6 +3,8 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 <!-- (PMPL-1.0-or-later preferred; MPL-2.0 required for Hex.pm) -->
 
+## CRG Grade: C — ACHIEVED 2026-04-04
+
 ## CRG C — Test Coverage Achieved
 
 CRG C gate requires: unit, smoke, build, P2P (property-based), E2E,
