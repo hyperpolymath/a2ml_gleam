@@ -1,6 +1,6 @@
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/hyperpolymath)
 
-// SPDX-License-Identifier: MPL-2.0
+// SPDX-License-Identifier: CC-BY-SA-4.0
 // (MPL-2.0 preferred; MPL-2.0 required for Hex.pm ecosystem)
 
 = a2ml_gleam
@@ -55,6 +55,6 @@ Wondering how this works? See link:EXPLAINME.adoc[].
 
 == License
 
-SPDX-License-Identifier: MPL-2.0 +
+SPDX-License-Identifier: CC-BY-SA-4.0 +
 (MPL-2.0 preferred; MPL-2.0 required for Hex.pm ecosystem) +
 See link:LICENSE[LICENSE].
