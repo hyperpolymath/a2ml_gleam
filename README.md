@@ -1,60 +1,58 @@
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/hyperpolymath)
+<!--
+SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-FileCopyrightText: 2025-2026 Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
+-->
 
-// SPDX-License-Identifier: CC-BY-SA-4.0
-// (MPL-2.0 preferred; MPL-2.0 required for Hex.pm ecosystem)
-
-= a2ml_gleam
-:toc: preamble
-:icons: font
-
-image:https://api.securityscorecards.dev/projects/github.com/hyperpolymath/a2ml_gleam/badge[OpenSSF Scorecard,link="https://securityscorecards.dev/viewer/?uri=github.com/hyperpolymath/a2ml_gleam"]
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/hyperpolymath/a2ml_gleam/badge)](https://securityscorecards.dev/viewer/?uri=github.com/hyperpolymath/a2ml_gleam)
 
 A2ML (AI Attestation Markup Language) parser and renderer for Gleam.
 
-== Overview
+# Overview
 
-A pure Gleam library for parsing, manipulating, and rendering A2ML documents.
-A2ML is a lightweight markup language for expressing AI attestations, trust
-levels, and verification metadata.
+A pure Gleam library for parsing, manipulating, and rendering A2ML
+documents. A2ML is a lightweight markup language for expressing AI
+attestations, trust levels, and verification metadata.
 
-== Features
+# Features
 
-* Full A2ML parser with error reporting
-* Renderer for A2ML document output
-* Trust level handling (Unverified, Automated, Reviewed, Verified)
-* Attestation and directive support
-* Manifest extraction
-* Roundtrip fidelity (parse then render preserves structure)
+- Full A2ML parser with error reporting
 
-== Installation
+- Renderer for A2ML document output
 
-[source,sh]
-----
+- Trust level handling (Unverified, Automated, Reviewed, Verified)
+
+- Attestation and directive support
+
+- Manifest extraction
+
+- Roundtrip fidelity (parse then render preserves structure)
+
+# Installation
+
+```sh
 gleam add a2ml_gleam
-----
+```
 
-== Usage
+# Usage
 
-[source,gleam]
-----
+```gleam
 import a2ml_gleam/parser
 import a2ml_gleam/renderer
 
 let assert Ok(doc) = parser.parse("# My Document\n\n@version 1.0")
 let output = renderer.render(doc)
-----
+```
 
-== Testing
+# Testing
 
-[source,sh]
-----
+```sh
 gleam test
-----
+```
 
-Wondering how this works? See link:EXPLAINME.adoc[].
+Wondering how this works? See [EXPLAINME.adoc](EXPLAINME.adoc).
 
-== License
+# License
 
-SPDX-License-Identifier: CC-BY-SA-4.0 +
-(MPL-2.0 preferred; MPL-2.0 required for Hex.pm ecosystem) +
-See link:LICENSE[LICENSE].
+SPDX-License-Identifier: CC-BY-SA-4.0\
+(MPL-2.0 preferred; MPL-2.0 required for Hex.pm ecosystem)\
+See [LICENSE](LICENSE).
